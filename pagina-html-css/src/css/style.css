@@ -1,0 +1,156 @@
+
+
+body{
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 1366px;
+    display: grid;
+    grid-template-areas: "menu menu menu menu"
+    "category images images images";
+    
+}
+
+.menu{
+    grid-area: menu;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.menu h1{
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}
+
+.menu .info ul{
+    display: flex;
+}
+
+.menu .info{
+    display: flex;
+    align-items: center;
+}
+
+.menu .info ul li a{
+    margin-right: 20px;
+}
+
+.menu .info a:hover{
+    color: aliceblue;
+}
+
+
+
+.category{
+    grid-area: category;
+    margin: 30px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.category h1{
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.category .categories ul li{
+    border: 1px solid lightgray;
+    font-size: 20px;
+    padding: 15px 40px 15px;
+    
+
+}
+
+
+
+.category .categories ul li a:hover{
+    color: blue;
+}
+
+.images{
+    grid-area: images;
+    margin-top: 30px;
+    
+}
+
+.images .little-images{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.images .little-images .suggested{
+    margin-right: 13px;
+    margin-top: 10px;
+    max-width: 296px;
+}
+
+.images .little-images .suggested img{
+    max-width: 95%;
+}
+
+.big-image{
+    max-width: 100%;
+}
+
+@media(max-width:650px){
+    
+    body{
+        display: block;
+    }
+
+    .images .little-images{
+        display: flex;
+        justify-content: center;
+    }
+    .category {
+        margin: 0 auto;
+    }
+    .menu h1, .info{
+        margin: 0 auto;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
